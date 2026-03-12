@@ -1,5 +1,8 @@
 @import 'reset.css';
 
-header {
-	color: yellow;
+body {
+	background: #222233;
+}
+* {
+	color: #eeeeee;
 }
