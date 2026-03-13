@@ -6,3 +6,73 @@ body {
 * {
 	color: #eeeeee;
 }
+.flexbox {
+	display: flex;
+	gap: 20px;
+}
+ul {
+	padding: 5px;
+}
+nav {
+	display: flex;
+	flex-direction: column;
+}
+.logo {
+	gap: 5px;
+	font-size: 20px;
+}
+a {
+	padding: 2px;
+}
+a:hover {
+	background: linear-gradient(90deg, #ff6b6b, #c77dff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+}
+#maincontent {
+	background: linear-gradient(90deg, #223344, #443322, #223344);
+	padding: 5px;
+}
+#cards {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+article {
+	box-sizing: border-box;
+	border: 4px solid black;
+	padding: 5px;
+	margin: 5px;
+}
+footer {
+	background: #44883388;
+	text-align: center;
+}
+
+/* tablet */
+@media (min-width: 800px) { 
+	#cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.menu {
+		flex-direction: row;
+	}
+	nav {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 80px;
+	}
+}
+
+/* desktop */
+@media (min-width: 1280px) { 
+	#cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
